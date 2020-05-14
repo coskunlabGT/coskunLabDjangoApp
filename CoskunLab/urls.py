@@ -22,5 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls')),
     path('quickOrder/', include('quickOrder.urls')),
-    path('UserManagement/', include('UserManagement.urls'))
+    path('UserManagement/', include('UserManagement.urls')),
+    path('calendar/', include('events.urls')),
 ]

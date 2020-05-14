@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'labInterface',
     'rest_framework',
     'quickOrder',
-    'UserManagement'
+    'UserManagement',
+    'events.apps.EventsConfig',
 ]
 
 MIDDLEWARE = [
