@@ -29,7 +29,7 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
+CORS_ORIGIN_ALLOW_ALL=True
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -37,9 +37,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'labInterface',
+    'rest_framework',
+    'quickOrder',
+    'UserManagement',
+    'corsheaders'
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -76,10 +83,10 @@ WSGI_APPLICATION = 'CoskunLab.wsgi.application'
 DATABASES = {
 'default': {
     'ENGINE': 'django.db.backends.postgresql',
-    'NAME': 'CoskunLab',
+    'NAME': 'coskunlab',
     'USER': 'postgres',
     'PASSWORD': 'CoskunlabGT2019',
-    'HOST': 'coskunlab.ci43u1fhj6t1.us-east-2.rds.amazonaws.com',
+    'HOST': 'coskunlabinterface.ci43u1fhj6t1.us-east-2.rds.amazonaws.com',
     'PORT': '5432',
     }
 }
