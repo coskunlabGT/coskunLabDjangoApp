@@ -16,11 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from quickOrder import views
-
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls')),
-    path('quickOrder/', include('quickOrder.urls')),
-    path('UserManagement/', include('UserManagement.urls'))
+    path('QuickOrder/', include('QuickOrder.urls')),
+    path('UserManagement/', include('UserManagement.urls')),
+    path('LevelFeature/', include('levelFeature.urls'))
 ]
