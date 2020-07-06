@@ -109,13 +109,21 @@ def getAllDashboards(request):
         serializer = DashboardSerializer(dashboard, many = True)
         return Response(serializer.data)
 
+<<<<<<< HEAD
 @api_view(['POST'])
+=======
+@api_view(['GET'])
+>>>>>>> upstream/master
 def getDashboard(request):
     body_unicode = request.body.decode('utf-8')
     body_data = json.loads(body_unicode)
     user_id = body_data["user_id"]
 
+<<<<<<< HEAD
     dashboard = Dashboard.objects.filter(user = user_id)
+=======
+    dashboard = Dashboard.objects.filter(id = user_id)
+>>>>>>> upstream/master
 
     wanted_research = set()
 
@@ -127,6 +135,11 @@ def getDashboard(request):
                 nothing_added = False
                 wanted_research.add(research.id)
 
+<<<<<<< HEAD
+=======
+    nothing_added = False
+
+>>>>>>> upstream/master
     if nothing_added:
         return Response(status=status.HTTP_400_BAD_REQUEST)
     else:

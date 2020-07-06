@@ -11,6 +11,10 @@ urlpatterns = [
     path('get-Research/', views.getResearch, name='get-Research'),
     path('get-Dashboard/', views.getDashboard, name='get-Dashboard'),
     path('add-ResearchtoDashboard/', views.addResearchtoDashboard, name='add-ResearchtoDashboard'),
+<<<<<<< HEAD
     path('get-allDashboards/', views.getAllDashboards, name='get-allDashboards'),
+=======
+    path('get-allDashboards/', views.getAllDashboards, name='get-allDasboards'),
+>>>>>>> upstream/master
     path('delete-ResearchfromDashboard/', views.deleteResearchfromDashboard, name='delete-ResearchfromDashboard')
 ]
