@@ -109,7 +109,7 @@ def getAllDashboards(request):
         serializer = DashboardSerializer(dashboard, many = True)
         return Response(serializer.data)
 
-@api_view(['POST'])
+@api_view(['GET'])
 def getDashboard(request):
     body_unicode = request.body.decode('utf-8')
     body_data = json.loads(body_unicode)
