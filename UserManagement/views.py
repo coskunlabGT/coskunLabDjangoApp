@@ -115,7 +115,7 @@ def getDashboard(request):
     body_data = json.loads(body_unicode)
     user_id = body_data["user_id"]
 
-    dashboard = Dashboard.objects.filter(user = user_id)
+    dashboard = Dashboard.objects.filter(user_id = user_id)
 
     wanted_research = set()
 
