@@ -111,9 +111,10 @@ def getAllDashboards(request):
 
 @api_view(['GET'])
 def getDashboard(request):
-    body_unicode = request.body.decode('utf-8')
-    body_data = json.loads(body_unicode)
-    user_id = body_data["user_id"]
+    # body_unicode = request.body.decode('utf-8')
+    # body_data = json.loads(body_unicode)
+    # user_id = body_data["user_id"]
+    user_id = int(request.GET.get("user_id"))
 
     dashboard = Dashboard.objects.filter(user_id = user_id)
 
