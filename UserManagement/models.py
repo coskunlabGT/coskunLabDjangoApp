@@ -7,6 +7,8 @@ class User(models.Model):
     email = models.CharField(max_length=100, unique=True)
     role = models.CharField(max_length=15)
     phone_number = models.IntegerField(blank=True, null=True, unique=True)
+    token = models.CharField(max_length=200, default="null")
+
 
 class Research(models.Model):
     name = models.CharField(max_length=30)

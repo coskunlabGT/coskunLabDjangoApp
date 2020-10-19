@@ -1,0 +1,14 @@
+{
+    "dev": {
+        "django_settings": "CoskunLab.settings",
+        "profile_name": null,
+        "project_name": "coskunlabdjango",
+        "runtime": "python3.8",
+        "s3_bucket": "zappa-vc1f6vxja",
+        "aws_region": "us-west-1",
+        "environment_variables": {
+        	"Access key ID": "AKIAZQSBOKUYWFJXU5ZY",
+        	"Secret access key": "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"
+        }
+    }
+}
