@@ -9,6 +9,7 @@ class User(models.Model):
     phone_number = models.IntegerField(blank=True, null=True, unique=True)
     first_time = models.BooleanField(default=True)
     token = models.CharField(max_length=200, default="null")
+    is_deleted = models.BooleanField(default = False)
 
 
 class Research(models.Model):
