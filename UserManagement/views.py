@@ -78,6 +78,9 @@ def updateUser(request):
         if ("name" in body_data.keys()):
             newName = body_data["name"]
             User.objects.filter(pk = user_id).update(name=newName)
+
+        User.objects.filter(pk = user_id).update(first_time=False)
+
         user = User.objects.get(pk = user_id)
         serializer = UserSerializer(user)
         return Response(serializer.data)
