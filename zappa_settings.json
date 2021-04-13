@@ -1,0 +1,10 @@
+{
+    "production": {
+        "aws_region": "us-east-1",
+        "django_settings": "CoskunLab.settings",
+        "profile_name": "default",
+        "project_name": "coskunlab",
+        "runtime": "python3.8",
+        "s3_bucket": "zappa-a9b9utsa6"
+    }
+}
