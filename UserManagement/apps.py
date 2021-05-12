@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class LabinterfaceConfig(AppConfig):
-    name = 'labInterface'
+class UserManagementConfig(AppConfig):
+    name = 'UserManagement'

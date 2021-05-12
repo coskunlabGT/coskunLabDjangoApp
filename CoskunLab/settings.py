@@ -42,7 +42,9 @@ INSTALLED_APPS = [
     'rest_framework',
     'QuickOrder',
     'UserManagement',
-    'levelFeature'
+    'levelFeature',
+    'generalOrder'
+    
     
 ]
 
@@ -84,10 +86,10 @@ WSGI_APPLICATION = 'CoskunLab.wsgi.application'
 DATABASES = {
 'default': {
     'ENGINE': 'django.db.backends.postgresql',
-    'NAME': 'coskunlab',
+    'NAME': 'coskunlabdev',
     'USER': 'postgres',
     'PASSWORD': 'CoskunlabGT2019',
-    'HOST': 'coskunlabinterface.ci43u1fhj6t1.us-east-2.rds.amazonaws.com',
+    'HOST': 'coskunlabdev.cds3hgsmul9l.us-east-1.rds.amazonaws.com',
     'PORT': '5432',
     }
 }

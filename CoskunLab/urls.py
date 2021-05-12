@@ -21,5 +21,7 @@ urlpatterns = [
     path('api-auth/', include('rest_framework.urls')),
     path('QuickOrder/', include('QuickOrder.urls')),
     path('UserManagement/', include('UserManagement.urls')),
-    path('LevelFeature/', include('levelFeature.urls'))
+    path('LevelFeature/', include('levelFeature.urls')),
+    path('generalOrder/', include('generalOrder.urls'))
+
 ]
