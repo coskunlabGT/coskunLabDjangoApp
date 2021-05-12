@@ -5,6 +5,6 @@
         "profile_name": "default",
         "project_name": "coskunlab",
         "runtime": "python3.8",
-        "s3_bucket": "zappa-a9b9utsa6"
+        "s3_bucket": "zappa-yf7xmf3en"
     }
 }
